@@ -1,0 +1,42 @@
+
+
+
+@keyframes flower{
+  0%, 10% {   transform: rotate(120deg) }
+  45%, 55% {  transform: rotate(90deg) }
+  90%, 100% { transform: rotate(60deg) }
+}
+i {
+    display: inline-block;
+    width: 0; height: 0;
+    padding: 40px 20px;
+    background: rgba(255,255,255,.6);
+    transform: rotate(120deg);
+    border-top-left-radius: 99px;
+    border-bottom-right-radius: 99px;
+    box-shadow: #dbf0f5 0 0 30px;
+    animation: flower 3s ease-in-out infinite alternate;
+  }
+  i ~ i:nth-child(odd),
+  i ~ i:nth-child(odd) i {
+    transform: rotate(90deg);
+    animation-delay: -1.5s;
+  }
+  i ~ i:nth-child(even),
+  i ~ i:nth-child(even) i {
+    transform: rotate(60deg);
+    margin-right: 0;
+    animation-delay: -3s;
+  }
+  .loading > i {
+    margin: 0 120px;
+    display: relative;
+  }
+
+  i:before {
+    position: absolute;
+    top:120; left: 120;
+    border-style: solid;
+    border-width: 20px 20px;
+    border-color: #dbf0f5 #dbf0f5 transparent transparent;
+  }

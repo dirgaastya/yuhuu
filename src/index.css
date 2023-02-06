@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Birthday Wishlist;
+    src: url('./assets/fonts/cupcake-factory.ttf');
+}
+@font-face {
+    font-family: Wishlist;
+    src: url('./assets/fonts/birthday-wishlist.otf');
+}
+@font-face {
+    font-family: Avenir;
+    src: url('./assets/fonts/avenir-light.ttf');
+}
