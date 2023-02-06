@@ -12,7 +12,8 @@
     "react": "^18.2.0",
     "react-animated-css": "^1.2.1",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.0"
+    "react-router-dom": "^6.8.0",
+    "react-type-animation": "^2.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
