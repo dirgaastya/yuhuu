@@ -4,13 +4,13 @@
 
 @font-face {
     font-family: Birthday Wishlist;
-    src: url('./assets/fonts/cupcake-factory.ttf');
+    src: url('./assets/fonts/cupcake-factory.woff2');
 }
 @font-face {
     font-family: Wishlist;
-    src: url('./assets/fonts/birthday-wishlist.otf');
+    src: url('./assets/fonts/birthday-wishlist.woff2');
 }
 @font-face {
     font-family: Avenir;
-    src: url('./assets/fonts/avenir-light.ttf');
+    src: url('./assets/fonts/avenir-light.woff2');
 }
