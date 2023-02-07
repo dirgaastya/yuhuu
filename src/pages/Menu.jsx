@@ -82,7 +82,7 @@ const Menu = () => {
                                 animationInDuration={3000}
                                 animationInDelay={8500}
                             >
-                                <Navlink to={"/"} text={"Yuhuuu!"} />
+                                <Navlink to={"/gift"} text={"Yuhuuu!"} />
                             </Animated>
                         </div>
                     </Animated>
