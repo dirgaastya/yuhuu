@@ -4,17 +4,8 @@ import Avatar from "../assets/img/boy-exploding-party-popper.png";
 import Gift from "../assets/img/valentine-gift.png";
 import { Animated } from "react-animated-css";
 import { TypeAnimation } from "react-type-animation";
-import { useState, useEffect } from "react";
 
 const Menu = () => {
-    const [avatar, setAvatar] = useState(false);
-    const [gift, setGift] = useState(false);
-
-    useEffect(() => {
-        setInterval(() => {
-            setAvatar(true);
-        });
-    }, []);
     return (
         <Layout>
             <Animated animationIn="fadeIn" animationOut="fadeOut" animationInDuration={2000}>
@@ -82,7 +73,11 @@ const Menu = () => {
                                 animationInDuration={3000}
                                 animationInDelay={8500}
                             >
-                                <Navlink to={"/gift"} text={"Yuhuuu!"} />
+                                <Navlink
+                                    to={"/gift"}
+                                    text={"Yuhuuu"}
+                                    className="w-full text-center py-2 px-4 border rounded-full border-white bg-white text-slate-900 font-semibold text-md hover:bg-gray-200 transition ease-in duration-300 hover:scale-105"
+                                />
                             </Animated>
                         </div>
                     </Animated>

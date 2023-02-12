@@ -11,6 +11,7 @@ specifiers:
   react-animated-css: ^1.2.1
   react-dom: ^18.2.0
   react-icons: ^4.7.1
+  react-lottie: ^1.2.3
   react-router-dom: ^6.8.0
   react-type-animation: ^2.1.2
   tailwindcss: ^3.2.4
@@ -22,6 +23,7 @@ dependencies:
   react-animated-css: 1.2.1
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
+  react-lottie: 1.2.3_react@18.2.0
   react-router-dom: 6.8.0_biqbaboplfbrettd7655fr4n2y
   react-type-animation: 2.1.2_biqbaboplfbrettd7655fr4n2y
   video-react: 0.16.0_biqbaboplfbrettd7655fr4n2y
@@ -781,6 +783,10 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
+  /lottie-web/5.10.2:
+    resolution: {integrity: sha512-d0PFIGiwuMsJYaF4uPo+qG8dEorlI+xFI2zrrFtE1bGO4WoLIz+NjremxEq1swpR7juR10aeOtmNh3d6G3ub0A==}
+    dev: false
+
   /merge2/1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -977,6 +983,17 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-lottie/1.2.3_react@18.2.0:
+    resolution: {integrity: sha512-qLCERxUr8M+4mm1LU0Ruxw5Y5Fn/OmYkGfnA+JDM/dZb3oKwVAJCjwnjkj9TMHtzR2U6sMEUD3ZZ1RaHagM7kA==}
+    engines: {npm: ^3.0.0}
+    peerDependencies:
+      react: ^0.14.7 || ^15.0.0 || ^16.0.0
+    dependencies:
+      babel-runtime: 6.26.0
+      lottie-web: 5.10.2
+      react: 18.2.0
     dev: false
 
   /react-router-dom/6.8.0_biqbaboplfbrettd7655fr4n2y:

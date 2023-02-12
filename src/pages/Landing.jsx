@@ -36,7 +36,7 @@ const Landing = () => {
                 <div className="w-full flex justify-center pt-16">
                     <Animated animationIn="fadeInUp" isVisible={true} animationInDuration={1000} animationInDelay={6500}>
                         <Link
-                            to="menu"
+                            to="greet"
                             className="w-full text-center py-2 px-4 border rounded-full border-white bg-white text-slate-900 font-semibold text-md hover:bg-gray-200 transition ease-in duration-300 hover:scale-105"
                         >
                             Mari kak mampir
