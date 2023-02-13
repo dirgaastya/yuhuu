@@ -14,11 +14,19 @@ const Last = () => {
     });
     return (
         <Layout>
-            <Sound url="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" playStatus="PLAYING" />
+            {/* <Sound url="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" playStatus="PLAYING" /> */}
+            <iframe
+                src="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/"
+                allow="autoplay"
+                className="hidden"
+                id="iframeAudio"
+            ></iframe>
             <div className="w-full  flex flex-col items-center justify-center px-3 overflow-x-hidden">
-                <h1 className="text-2xl font-bold text-white tracking-tighter antialiased mb-3">
-                    Sekali lagi, Happy Birthdayyyy kakkk🥳🥳🥳
-                </h1>
+                <Animated animationIn="fadeIn" animationInDuration={2000}>
+                    <h1 className="text-2xl font-bold text-white tracking-tighter antialiased mb-3">
+                        Sekali lagi, Happy Birthdayyyy kakkk🥳🥳🥳
+                    </h1>
+                </Animated>
                 <Animated animationIn="fadeIn" animationInDuration={2000}>
                     <div className="max-w-3xl  border-gray-300 rounded-xl bg-white bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-60 drop-shadow-md overflow-hidden">
                         <div className="flex items-center px-4 py-2 gap-x-2">
