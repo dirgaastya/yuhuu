@@ -3,6 +3,7 @@ import cat from "../api/cat.json";
 import Lottie from "react-lottie";
 import { Animated } from "react-animated-css";
 import { useState, useEffect } from "react";
+import Navlink from "./../component/Navlink";
 const ListGift = () => {
     const [loading, setLoading] = useState(true);
     const [displayButton, setDisplayButton] = useState(false);
@@ -50,7 +51,7 @@ const ListGift = () => {
                                 displayButton ? "block" : "hidden"
                             } mt-6 text-center py-2 px-4 border rounded-full border-white bg-white shadow-md text-slate-900 font-semibold text-md hover:bg-gray-100 transition ease-in duration-300 hover:scale-105`}
                         >
-                            Nungguin ya? klik ini ajaa 🚀
+                            Nungguin ya? yu 🚀
                         </button>
                     </Animated>
                 </div>
@@ -67,6 +68,10 @@ const ListGift = () => {
                                 width={"100%"}
                                 allowFullScreen={true}
                             ></iframe>
+                        </div>
+                        <div className="flex items-center justify-between my-3">
+                            <span className="text-xs text-gray-700 font-thin">*Kalo udah beres silahkan kesini kak 👉</span>
+                            <Navlink to={"/ba"} text={"🎁"} />
                         </div>
                     </Animated>
                 </div>
