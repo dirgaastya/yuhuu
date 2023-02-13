@@ -2,8 +2,9 @@ import { useState } from "react";
 import Layout from "../Layout";
 import Confetti from "react-confetti";
 import { useEffect } from "react";
-import Sound from "react-sound";
+// import Sound from "react-sound";
 import { Animated } from "react-animated-css";
+import ReactHowler from "react-howler";
 
 const Last = () => {
     const [run, setRun] = useState(true);
@@ -15,15 +16,14 @@ const Last = () => {
     return (
         <Layout>
             {/* <Sound url="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" playStatus="PLAYING" /> */}
-            <audio id="musicplayer" autoPlay>
-                <source src="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" />
-            </audio>
-            {/* <iframe
+            <ReactHowler src="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" playing={true} />
+
+            <iframe
                 src="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/"
-                allow="autoplay"
+                allow="autoplay 'src' https://ucarecdn.com/"
                 className="hidden"
                 id="iframeAudio"
-            ></iframe> */}
+            ></iframe>
             <div className="w-full  flex flex-col items-center justify-center px-3 overflow-x-hidden">
                 <Animated animationIn="fadeIn" animationInDuration={2000}>
                     <h1 className="text-2xl font-bold text-white tracking-tighter antialiased mb-3">
