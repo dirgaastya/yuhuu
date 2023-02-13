@@ -39,11 +39,31 @@ const Menu = () => {
                                     animationInDuration={3000}
                                     animationInDelay={5000}
                                 >
-                                    <p className="font-avenir text-sm">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nesciunt eaque voluptate
-                                        eligendi dolorum nulla aspernatur temporibus animi corporis dolor modi quae, iusto fuga
-                                        fugit quod, aliquam itaque placeat. Iure.
-                                    </p>
+                                    <div className="mt-3 text-justify space-y-3">
+                                        <p className="font-avenir text-sm">
+                                            Selamat menua kakk, semoga impian kakak dari kecil menjadi pengisi suara barbie dapat
+                                            tercapai tahun ini. Semoga tahun ini menjadi tahun yang baikk bagi kak dilaa dan
+                                            sekeluarga termasuk ayah, ibu, kakak, adik, mengkun, sepupu, keponakan, om, tante,
+                                            keluarga dari ayah, keluarga dari ibu, temennya ayah, temennya ibu, temen-temennya kak
+                                            dila, omnya temen kak dila,tantenya temen kak dila, keponakannya temen kak dila,
+                                            sepupunya temen kak dila, imam masjid deket rumah kak dila, kepala sekolah dan
+                                            guru-guru waktu kak dila masih sd, smp, sma, jangan lupa dosen-dosennya kak dila juga.
+                                        </p>
+                                        <p className="font-avenir text-sm">
+                                            Doa dari kami yang terbaik buat kakak supaya dilancarkan segala urusannyaa, mulai dari
+                                            ngurus KTP, KK, SIM, bikin SKCK, pasport terus sama perpanjang STNK, intinyaa segala
+                                            urusannyaa dipermudahhh.
+                                        </p>
+                                        <p className="font-avenir text-sm">
+                                            Jangan terlalu berlarut dalam kesedihan kak, soalnya kalo mau larut harus pake air
+                                            panas :({" "}
+                                        </p>
+                                        <p className="font-avenir text-sm">
+                                            Semangat kuliahnyaa bentar lagi luluss, semoga lulus kakak udah bisa hipnotis sama
+                                            jadi dubber berbiii ✨✨✨
+                                        </p>
+                                        <p className="text-right  font-avenir text-sm">-Maskedd</p>
+                                    </div>
                                 </Animated>
                             </div>
                         </div>

@@ -44,10 +44,10 @@ const Last = () => {
                                 <Animated animationIn="fadeIn" animationInDuration={1000} animationInDelay={2000}>
                                     <img src="https://ucarecdn.com/518cd13f-354c-4188-a163-84084c7729c8/" alt="photo" />
                                     <div className="px-4 py-1">
-                                        <span className="font-semibold leading-tight antialiased tracking-tight">
+                                        <span className="text-sm font-semibold leading-tight antialiased tracking-tight">
                                             sisternya.hadid
                                         </span>
-                                        <p className="leading-relaxed">Mupullllllllllllllllanggg</p>
+                                        <p className="leading-relaxed text-sm">Mupullllllllllllllllanggg 😭😭</p>
                                     </div>
                                 </Animated>
                             </div>
