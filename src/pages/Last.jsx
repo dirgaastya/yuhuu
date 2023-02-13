@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "../Layout";
 import Confetti from "react-confetti";
 import { useEffect } from "react";
-import ReactAudioPlayer from "react-audio-player";
+// import ReactAudioPlayer from "react-audio-player";
 
 const Last = () => {
     const [run, setRun] = useState(true);
@@ -13,7 +13,7 @@ const Last = () => {
     });
     return (
         <Layout>
-            <ReactAudioPlayer src="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" autoPlay={true} />
+            {/* <ReactAudioPlayer src="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" autoPlay={true} /> */}
             <div className="h-screen w-full flex flex-col items-center justify-center px-3">
                 <h1 className="text-2xl font-bold text-white tracking-tighter antialiased mb-3">
                     Sekali lagi, Happy Birthdayyyy kakkk🥳🥳🥳
