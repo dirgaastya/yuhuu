@@ -32,7 +32,7 @@ const ListGift = () => {
         <Layout>
             {loading ? (
                 <div>
-                    <div className=" absolute -top-10 left-0 overflow-hidden">
+                    <div className=" absolute -top-10 md:-top-44 left-0 md:left-56 overflow-hidden">
                         <Lottie options={defaultOptions} width={400} height={400} />
                     </div>
                     <h3

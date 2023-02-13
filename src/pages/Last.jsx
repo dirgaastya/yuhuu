@@ -10,10 +10,9 @@ const Last = () => {
     const [play, setPlay] = useState("PAUSED");
     const [display, setDisplay] = useState(false);
     useEffect(() => {
-        setPlay(true);
-        setInterval(() => {
-            setRun(false);
-        }, 10000);
+        // setInterval(() => {
+        //     setRun(false);
+        // }, 10000);
     }, []);
     return (
         <Layout>
@@ -23,8 +22,8 @@ const Last = () => {
                 <>
                     <div className="w-full  flex flex-col items-center justify-center px-3 overflow-x-hidden">
                         <Animated animationIn="fadeIn" animationInDuration={2000}>
-                            <h1 className="text-2xl font-bold text-white tracking-tighter antialiased mb-3">
-                                Sekali lagi, Happy Birthdayyyy kakkk🥳🥳🥳
+                            <h1 className="text-2xl font-bold text-white tracking-tighter antialiased mb-3 animate-pulse">
+                                Sekali lagi, Happy Birthdayyyy Dilaaaa🥳🥳🥳
                             </h1>
                         </Animated>
                         <Animated animationIn="fadeIn" animationInDuration={2000}>

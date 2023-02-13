@@ -47,20 +47,22 @@ const Menu = () => {
                                             keluarga dari ayah, keluarga dari ibu, temennya ayah, temennya ibu, temen-temennya kak
                                             dila, omnya temen kak dila,tantenya temen kak dila, keponakannya temen kak dila,
                                             sepupunya temen kak dila, imam masjid deket rumah kak dila, kepala sekolah dan
-                                            guru-guru waktu kak dila masih sd, smp, sma, jangan lupa dosen-dosennya kak dila juga.
+                                            guru-guru waktu kak dila masih tk, sd, smp, sma, jangan lupa dosen-dosennya kak dila
+                                            juga.
                                         </p>
                                         <p className="font-avenir text-sm">
-                                            Doa dari kami yang terbaik buat kakak supaya dilancarkan segala urusannyaa, mulai dari
-                                            ngurus KTP, KK, SIM, bikin SKCK, pasport terus sama perpanjang STNK, intinyaa segala
-                                            urusannyaa dipermudahhh.
+                                            Kami penduduk Indonesia yang secara keseluruhan tercatat sebanyak 275.361.267 jiwa
+                                            pada tahun 2022 mendoakan yang terbaik buat kakak supaya dilancarkan segala
+                                            urusannyaa, mulai dari ngurus KTP, KK, SIM, bikin SKCK, pasport terus sama perpanjang
+                                            STNK, intinyaa segala urusannyaa dipermudahhh. Amin paling serius🤲
                                         </p>
                                         <p className="font-avenir text-sm">
                                             Jangan terlalu berlarut dalam kesedihan kak, soalnya kalo mau larut harus pake air
                                             panas :({" "}
                                         </p>
                                         <p className="font-avenir text-sm">
-                                            Semangat kuliahnyaa bentar lagi luluss, semoga lulus kakak udah bisa hipnotis sama
-                                            jadi dubber berbiii ✨✨✨
+                                            Semangat kuliahnyaa bentar lagi luluss, semoga lulus kakak udah bisa hipnotis naga
+                                            sama jadi dubber berbiii ✨✨✨
                                         </p>
                                         <p className="text-right  font-avenir text-sm">-Maskedd</p>
                                     </div>

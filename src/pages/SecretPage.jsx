@@ -10,7 +10,10 @@ const SecretPage = () => {
                     <p className="font-avenir font-bold text-xl">Yah gaada apa apa maap:(</p>
                     <Navlink to={"/greet"} text={"Balik lagi siniii"} />
                 </div>
-                <p className="absolute bottom-10 text-xs text-white">Created with ❤️ by maskedd.</p>
+                <div className="absolute bottom-0 ">
+                    <p className=" text-center text-xs text-white">Created with ❤️ by maskedd.</p>
+                    <p className="text-center text-xs text-white">Video by luv.</p>
+                </div>
             </div>
         </Layout>
     );
