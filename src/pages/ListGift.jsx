@@ -8,12 +8,20 @@ import { Animated } from "react-animated-css";
 import { useState, useEffect } from "react";
 const ListGift = () => {
     const [loading, setLoading] = useState(true);
+    const [displayButton, setDisplayButton] = useState(false);
 
     useEffect(() => {
+        console.log(loading);
         setInterval(() => {
-            setLoading(false);
+            setDisplayButton(true);
         }, 5000);
+        console.log(loading);
     }, []);
+
+    const handleButton = () => {
+        setLoading(false);
+        setDisplayButton(false);
+    };
 
     const defaultOptions = {
         loop: true,
@@ -27,29 +35,39 @@ const ListGift = () => {
     return (
         <Layout>
             {loading ? (
-                <Lottie options={defaultOptions} height={400} width={400} />
-            ) : (
-                <div className="w-4/5 mx-auto">
-                    <Animated animationIn="fadeInLeft" animationOut="fadeOut" animationInDuration={2000}>
-                        <div className="py-2 px-4 w-full mb-6 border-gray-300 rounded-lg bg-white bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-60 drop-shadow-md">
-                            <h3 className="font-birthday">Silahkan dibuka tuatu kakk 🎁</h3>
-                        </div>
+                <div>
+                    <div className=" absolute -top-16 left-0 overflow-hidden">
+                        <Lottie options={defaultOptions} width={400} height={400} />
+                    </div>
+                    <h3 className="mt-6 text-center font-birthday font-semibold drop-shadow-sm animate-pulse">
+                        Tunggu bentarrr.....
+                    </h3>
+                    <Animated animationIn="fadeIn" animationInDuration={1500} isVisible={displayButton}>
+                        <button
+                            onClick={() => {
+                                handleButton();
+                            }}
+                            className={`${
+                                displayButton ? "block" : "hidden"
+                            } mt-6 text-center py-2 px-4 border rounded-full border-white bg-white shadow-md text-slate-900 font-semibold text-md hover:bg-gray-100 transition ease-in duration-300 hover:scale-105`}
+                        >
+                            Nungguin ya? klik ini ajaa
+                        </button>
                     </Animated>
-                    <Animated animationIn="fadeInLeft" animationOut="fadeOut" animationInDuration={2000}>
-                        <div className=" w-full border-gray-300 rounded-lg bg-white bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-60 drop-shadow-md overflow-hidden">
-                            {data.map((gift, index) => (
-                                <Link
-                                    to={`${gift.id}`}
-                                    key={index}
-                                    className="py-2 px-4 flex justify-between items-center hover:bg-white/80  hover:font-bold transition-all duration-500 ease-linear"
-                                >
-                                    <h3 className="font-avenir">
-                                        <span className="font-semibold ">{gift.id}. </span>
-                                        {gift.title}
-                                    </h3>
-                                    <CiPlay1 />
-                                </Link>
-                            ))}
+                </div>
+            ) : (
+                <div className="w-full md:w-3/4 p-4 border-gray-300 rounded-lg bg-white bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-60 drop-shadow-md overflow-hidden">
+                    <Animated animationIn="fadeIn" animationInDuration={1500}>
+                        <div className="w-2/3 border-b border-gray-900 mb-3">
+                            <h3 className="font-semibold font-avenir">Alasmakas skalas kasming masked</h3>
+                        </div>
+                        <div className="aspect-w-9 aspect-h-16 rounded-md overflow-hidden">
+                            <iframe
+                                src="https://ucarecdn.com/b75acdb8-e249-4f50-acf6-d922d93d5a0d/"
+                                className="w-full h-full"
+                                width={"100%"}
+                                allowFullScreen={true}
+                            ></iframe>
                         </div>
                     </Animated>
                 </div>

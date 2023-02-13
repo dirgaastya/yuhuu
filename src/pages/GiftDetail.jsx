@@ -3,20 +3,31 @@ import Layout from "./../Layout";
 import { useState, useEffect } from "react";
 import data from "../api/video.json";
 import Navlink from "./../component/Navlink";
+import cat from "../api/cat.json";
+import Lottie from "react-lottie";
 import FlowerLoading from "../component/FlowerLoading";
 import NoGift from "../component/NoGift";
 import { Link } from "react-router-dom";
 
 const GiftDetail = () => {
     const { id } = useParams();
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: cat,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice",
+        },
+    };
 
     const [gift, setGift] = useState([]);
     const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         setGift(data.filter((gift) => gift.id == id));
         setInterval(() => {
             setLoading(false);
-        }, 2000);
+        }, 3000);
     }, []);
     useEffect(() => {
         setLoading(true);
@@ -28,7 +39,7 @@ const GiftDetail = () => {
     return (
         <Layout>
             {loading ? (
-                <FlowerLoading />
+                <Lottie options={defaultOptions} height={400} width={400} />
             ) : gift.length > 0 ? (
                 <div className="w-full p-4 border-gray-300 rounded-lg bg-white bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-60 drop-shadow-md overflow-hidden">
                     <div className="w-2/3 border-b border-gray-900 mb-3">

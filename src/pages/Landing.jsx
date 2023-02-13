@@ -29,7 +29,9 @@ const Landing = () => {
 
                 <Animated animationIn="fadeInLeft" isVisible={true} animationInDuration={2000} animationInDelay={5000}>
                     <Animated animationIn="tada" isVisible={true} animationInDuration={1000} animationInDelay={5500}>
-                        <p className="font-avenir font-semibold text-xl uppercase text-center text-white drop-shadow">Kakk 🥳</p>
+                        <p className="font-avenir font-semibold text-xl uppercase text-center text-white drop-shadow">
+                            Kakk Dilaaa 🥳
+                        </p>
                     </Animated>
                 </Animated>
 

@@ -1,10 +1,8 @@
 import Layout from "../Layout";
 import Navlink from "../component/Navlink";
-import Avatar from "../assets/img/boy-exploding-party-popper.png";
-import Gift from "../assets/img/valentine-gift.png";
 import { Animated } from "react-animated-css";
 import { TypeAnimation } from "react-type-animation";
-
+import { Link } from "react-router-dom";
 const Menu = () => {
     return (
         <Layout>
@@ -18,7 +16,11 @@ const Menu = () => {
                                 animationInDuration={3000}
                                 animationInDelay={3000}
                             >
-                                <img src={Avatar} alt="avatar" className="w-52" />
+                                <img
+                                    src="https://ucarecdn.com/caa035c4-91e3-431e-a9ca-5717dd44bd48/"
+                                    alt="avatar"
+                                    className="w-52"
+                                />
                             </Animated>
                             <div>
                                 <Animated
@@ -55,7 +57,13 @@ const Menu = () => {
                                 animationInDuration={3000}
                                 animationInDelay={6500}
                             >
-                                <img src={Gift} alt="Gift" className="w-52" />
+                                <Link to="/rahasia">
+                                    <img
+                                        src="https://ucarecdn.com/92ad7ab3-09a9-4ed9-b9bb-ea649a3a21b6/"
+                                        alt="Gift"
+                                        className="w-52"
+                                    />
+                                </Link>
                             </Animated>
                             <div className="mb-3">
                                 <Animated
