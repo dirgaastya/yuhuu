@@ -15,12 +15,15 @@ const Last = () => {
     return (
         <Layout>
             {/* <Sound url="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" playStatus="PLAYING" /> */}
-            <iframe
+            <audio id="musicplayer" autoPlay>
+                <source src="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/" />
+            </audio>
+            {/* <iframe
                 src="https://ucarecdn.com/d4841cd8-dc7a-4ac6-822e-f0e19efcb2d5/"
                 allow="autoplay"
                 className="hidden"
                 id="iframeAudio"
-            ></iframe>
+            ></iframe> */}
             <div className="w-full  flex flex-col items-center justify-center px-3 overflow-x-hidden">
                 <Animated animationIn="fadeIn" animationInDuration={2000}>
                     <h1 className="text-2xl font-bold text-white tracking-tighter antialiased mb-3">
