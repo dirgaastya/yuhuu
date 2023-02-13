@@ -1,7 +1,4 @@
 import Layout from "../Layout";
-import { CiPlay1 } from "react-icons/ci";
-import { Link } from "react-router-dom";
-import data from "../api/video.json";
 import cat from "../api/cat.json";
 import Lottie from "react-lottie";
 import { Animated } from "react-animated-css";
@@ -11,11 +8,9 @@ const ListGift = () => {
     const [displayButton, setDisplayButton] = useState(false);
 
     useEffect(() => {
-        console.log(loading);
         setInterval(() => {
             setDisplayButton(true);
         }, 5000);
-        console.log(loading);
     }, []);
 
     const handleButton = () => {
@@ -36,10 +31,14 @@ const ListGift = () => {
         <Layout>
             {loading ? (
                 <div>
-                    <div className=" absolute -top-16 left-0 overflow-hidden">
+                    <div className=" absolute -top-10 left-0 overflow-hidden">
                         <Lottie options={defaultOptions} width={400} height={400} />
                     </div>
-                    <h3 className="mt-6 text-center font-birthday font-semibold drop-shadow-sm animate-pulse">
+                    <h3
+                        className={`${
+                            displayButton ? "hidden" : "block"
+                        } mt-6 text-center font-birthday font-semibold drop-shadow-sm animate-pulse`}
+                    >
                         Tunggu bentarrr.....
                     </h3>
                     <Animated animationIn="fadeIn" animationInDuration={1500} isVisible={displayButton}>
@@ -51,7 +50,7 @@ const ListGift = () => {
                                 displayButton ? "block" : "hidden"
                             } mt-6 text-center py-2 px-4 border rounded-full border-white bg-white shadow-md text-slate-900 font-semibold text-md hover:bg-gray-100 transition ease-in duration-300 hover:scale-105`}
                         >
-                            Nungguin ya? klik ini ajaa
+                            Nungguin ya? klik ini ajaa 🚀
                         </button>
                     </Animated>
                 </div>
