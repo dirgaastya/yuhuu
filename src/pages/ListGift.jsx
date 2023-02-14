@@ -63,7 +63,7 @@ const ListGift = () => {
                         </div>
                         <div className="aspect-w-9 aspect-h-16 rounded-md overflow-hidden">
                             <iframe
-                                src="https://player.castr.com/vod/LJ29wxYQ5VEtuIXd.mov"
+                                src="https://player.castr.com/vod/QuFDU4I2ppO3qmVM"
                                 className="w-full h-full"
                                 width={"100%"}
                                 allowFullScreen={true}
